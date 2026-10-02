@@ -1,0 +1,137 @@
+/* ==========================================================================
+   1. CORE STYLING & RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8fafc; /* Modern light gray background */
+    color: #1e293b; /* Dark slate text for premium readability */
+}
+
+/* ==========================================================================
+   2. HERO BANNER WITH BACKGROUND IMAGE
+   ========================================================================== */
+.hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), 
+                url('https://unsplash.com');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Gives a smooth parallax scrolling effect */
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 4px solid #3b82f6; /* Vivid blue accent line */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Makes text pop over background image */
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #94a3b8; /* Soft gray description text */
+}
+
+/* ==========================================================================
+   3. MAIN LAYOUT & CARDS
+   ========================================================================== */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+
+h2 {
+    color: #0f172a;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* ==========================================================================
+   4. TWO-COLUMN GRID FOR SKILLS
+   ========================================================================== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Responsive breakpoint for smaller mobile screens */
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skill-category h3 {
+    color: #3b82f6;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #334155;
+}
+
+/* ==========================================================================
+   5. ACADEMIC & PROJECTS SECTION
+   ========================================================================== */
+.project-item {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 8px 8px 0;
+}
+
+.project-item h3 {
+    font-size: 1.15rem;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+/* Vision/Goals Highlight */
+.vision p {
+    margin-bottom: 12px;
+}
+
+.vision p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   6. PROFESSIONAL FOOTER
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+    font-size: 0.9rem;
+    background: #f1f5f9;
+    margin-top: 60px;
+    border-top: 1px solid #e2e8f0;
+}
